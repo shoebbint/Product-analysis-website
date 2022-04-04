@@ -1,3 +1,20 @@
 .cus-review text {
     color: black;
 }
+
+.cus-review {}
+
+.text {
+    color: black;
+}
+
+.review-text {
+    margin-top: -300px;
+    background-color: aliceblue;
+}
+
+.card-style {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: -50px;
+}

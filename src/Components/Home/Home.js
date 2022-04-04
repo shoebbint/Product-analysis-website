@@ -1,11 +1,11 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import CustomerReviews from '../CustomerReviews/CustomerReviews';
-import UseReview from '../Hooks/UseReview';
+
 import r1 from '../images/r1.png'
 import './Home.css'
 const Home = () => {
-    const [reviews, setReview] = UseReview();
+
     return (
         <div className='container '>
             {<div className='first-section'>
@@ -25,8 +25,10 @@ const Home = () => {
                     </Col>
                 </Row>
             </div>}
-            <div>
-                <CustomerReviews reviews={reviews} ></CustomerReviews>
+            <div className='mt-5'>
+                <CustomerReviews>
+
+                </CustomerReviews>
             </div>
         </div>
     );

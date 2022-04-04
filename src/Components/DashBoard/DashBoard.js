@@ -2,8 +2,13 @@ import React from 'react';
 
 const DashBoard = () => {
     return (
-        <div>
-            <h2>this is dashboard</h2>
+        <div className=' d-flex'>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
         </div>
     );
 };
