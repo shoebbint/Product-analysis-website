@@ -1,0 +1,12 @@
+.first-section img {
+    height: 350px;
+    width: 600px;
+}
+
+.span-text {
+    color: deepskyblue;
+}
+
+.right-col {
+    background-color: rgba(0, 191, 255, 0.212);
+}
