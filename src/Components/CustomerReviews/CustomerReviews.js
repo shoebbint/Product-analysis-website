@@ -5,32 +5,38 @@ import Carousel from 'react-bootstrap/Carousel'
 import UseReview from '../../Hooks/UseReview';
 import r1 from './../images/r1.png'
 import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 
 const CustomerReviews = () => {
     const [reviews, setReviews] = UseReview([]);
+    const sliceReview = reviews.slice(1, 4);
 
     console.log(reviews);
     return (
-        <div className='cus-review mt-5 d-grid card-style'>
-            {
-                reviews.map(review =>
+        <div className='cus-review mt-5 mb-5 '>
+            <h2>Customer Reviews</h2>
+            <div className='mt-5 d-grid card-style mb-3'>
+                {
+                    sliceReview.map(review =>
 
-                    <Card style={{ width: '18rem' }}>
-                        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-                        <Card.Body>
-                            <Card.Title><h1 className='text-center'>{review.name}</h1></Card.Title>
-                            <Card.Text>
-                                <p>{review.about}</p>
-                                <h2>Ratings:{review.ratings}</h2>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
+                        <Card style={{ width: '18rem' }}>
+                            {/* <Card.Img className='card-img' variant="top" src="../images/user.jpg" /> */}
+                            <Card.Body>
+                                <Card.Title><h1 className='text-center'>{review.name}</h1></Card.Title>
+                                <Card.Text>
+                                    <p>{review.about}</p>
+                                    <h2>Ratings:{review.ratings}</h2>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
 
-                )
+                    )
 
-            }
+                }
+            </div>
+            <button type="button" class=" btn btn-outline-info"><Link className='link-btn' to="/reviews">See more</Link></button>
 
         </div>
     )

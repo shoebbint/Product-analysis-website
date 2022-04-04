@@ -2,6 +2,11 @@
     color: black;
 }
 
+.card-img {
+    height: 100px;
+    width: 100px;
+}
+
 .cus-review {}
 
 .text {
@@ -17,4 +22,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-right: -50px;
+}
+
+.link-btn {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
 }

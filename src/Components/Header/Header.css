@@ -1,5 +1,26 @@
 .nav-link {
+    height: 80px;
+    background-color: rgba(0, 191, 255, 0.212);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+
+
+}
+
+.nav-link a {
+    color: black;
     text-decoration: none;
+    font-size: 17px;
+    margin-left: 36px;
+    font-size: large;
+    font-weight: bold;
 
 
+}
+
+.nav-link a:hover {
+    color: deepskyblue;
 }

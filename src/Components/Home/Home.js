@@ -7,8 +7,8 @@ import './Home.css'
 const Home = () => {
 
     return (
-        <div className='container '>
-            {<div className='first-section'>
+        <div className='container mt-5 '>
+            <div className='first-section'>
                 <Row>
                     <Col className=' my-auto ' xs={12} md={6}>
                         <div className='d-flex align-items-center '>
@@ -16,7 +16,7 @@ const Home = () => {
                                 <span className='span-text'>Find Your best Bike</span>
                             </h1>
                         </div>
-                        <p>Not sure which bike to buy? We'll help you choose the motorcycle based on your budget and performance, mileage requirements. Answer the questions below and let us recommend the bikes that best match your preferences.</p>
+                        <p className='text-start'>Not sure which bike to buy? We'll help you choose the motorcycle based on your budget and performance, mileage requirements. Answer the questions below and let us recommend the bikes that best match your preferences.</p>
 
 
                     </Col>
@@ -24,7 +24,7 @@ const Home = () => {
                         <img className='img-fluid' src={r1} alt="" />
                     </Col>
                 </Row>
-            </div>}
+            </div>
             <div className='mt-5'>
                 <CustomerReviews>
 
