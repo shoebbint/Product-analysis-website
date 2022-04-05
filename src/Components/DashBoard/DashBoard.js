@@ -43,7 +43,7 @@ const DashBoard = () => {
     ];
 
     return (
-        <div className='d-flex container border border-info border-3'>
+        <div className='d-flex container border border-info border-3 mt-5'>
             <div>
                 <h2>Month wise sell</h2>
                 <LineChart width={500} height={400} data={data}>

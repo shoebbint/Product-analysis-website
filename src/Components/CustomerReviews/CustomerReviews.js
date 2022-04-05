@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 const CustomerReviews = () => {
     const [reviews, setReviews] = UseReview([]);
     const sliceReview = reviews.slice(1, 4);
@@ -16,7 +17,7 @@ const CustomerReviews = () => {
     console.log(reviews);
     return (
         <div className='cus-review mt-5 mb-5 '>
-            <h2>Customer Reviews</h2>
+            <h1>Customer Reviews</h1>
             <div className='mt-5 d-grid card-style mb-3'>
                 {
                     sliceReview.map(review =>
@@ -24,7 +25,7 @@ const CustomerReviews = () => {
                         <Card style={{ width: '18rem' }}>
                             {/* <Card.Img className='card-img' variant="top" src="../images/user.jpg" /> */}
                             <Card.Body>
-                                <Card.Title><h1 className='text-center'>{review.name}</h1></Card.Title>
+                                <Card.Title><h3 className='text-center'>Name: {review.name}</h3></Card.Title>
                                 <Card.Text>
                                     <p>{review.about}</p>
                                     <h2>Ratings:{review.ratings}</h2>
