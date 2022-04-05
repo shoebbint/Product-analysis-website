@@ -1,6 +1,6 @@
 # Bike Hunter
 
-live website link: https://soft-meerkat-529a69.netlify.app/home
+live website link: https://soft-meerkat-529a69.netlify.app/
 
 ## Project description
 
